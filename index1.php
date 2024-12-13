@@ -17,12 +17,16 @@
     <meta name="HandheldFriendly" content="false" /> 
     <!--------------------------------------   skript for counter---------------->
                 <script type="text/javascript">
+                    function DateFormator(time) {
+                        return (time[0] * 24 * 60 * 60 * 1000 + time[1] * 60 * 60 * 1000 + time[2] * 60 * 1000)
+                    }
+                    var Timer = [7,5,30]
                     $(function () {
                         var note = $('#note'),
                                 ts = new Date(2019, 28, 12), //МЕНЯТЬ ДАТУ ТУТ!!!!! дата НЕ включительно,  месяцы начинаются с "0"  Январь(1)-0, Февраль(2) - 1... Декабрь(12)- 12
                                 newYear = true;
                         if ((new Date()) > ts) {
-                            ts = (new Date()).getTime() + 00 * 2 * 60 * 60 * 1000;
+                            ts = (new Date()).getTime() + DateFormator(Timer);
                             newYear = false;
                         }
                         $('#countdown').countdown({

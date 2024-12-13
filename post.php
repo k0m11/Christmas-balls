@@ -1,6 +1,6 @@
 ﻿<?php
  /* Здесь проверяется существование переменных */
-  if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
+ if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
  if (isset($_POST['name'])) {$name = $_POST['name'];}
  if (isset($_POST['itemid'])) {$itemid = $_POST['itemid'];}
  if (isset($_POST['type_form'])) {$type_form = $_POST['type_form'];}
