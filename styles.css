@@ -654,7 +654,7 @@ input:active, textarea:active{outline: medium none;}
 /********************************************    conteiner_block1 **************************************************/
 #conteiner_block1{
     /*background: #f1f1f1; */
-    margin-top: -37px;}
+}
 #conteiner_block1 .center{
     overflow: hidden;
 }

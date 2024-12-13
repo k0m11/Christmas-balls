@@ -20,12 +20,16 @@
     <meta name="HandheldFriendly"  content="false"  />
     <!--------------------------------------   skript for counter---------------->
     <script type="text/javascript" >
+        function DateFormater(time) {
+            return (time[0] * 24 * 60 * 60 * 1000 + time[1] * 60 * 60 * 1000 + time[2] * 60 * 1000)
+        }
+        var Timer = [7,12,0]
         $(function () {
             var note = $('#note'),
                                 ts = new Date(2023, 11, 0), //МЕНЯТЬ ДАТУ ТУТ!!!!! дата НЕ включительно,  месяцы начинаются с "0"  Январь(1)-0, Февраль(2) - 1... Декабрь(12)- 12
                                 newYear = true;
                                 if ((new Date()) > ts) {
-                                    ts = (new Date()).getTime() + 12 * 15 * 60 * 60 * 1000;
+                                    ts = (new Date()).getTime() + DateFormater(Timer);
                                     newYear = false;
                                 }
                                 $('#countdown').countdown({
@@ -174,11 +178,10 @@
 
                                 <label>
                                     <select size="1"   name="Нанесение"  id="itemid" >
-                                        <option value="Нанесение"  selected="selected" >Нанесение</option>
-                                        <option value="1+0" >1+0</option>
-                                        <option value="2+0" >2+0</option>
-                                        <option value="3+0" >3+0</option>
-                                        <option value="4+0" >4+0</option>
+                                        <option value="Нанесение"  selected="selected" disabled>Нанесение</option>
+                                        <option value="1+0" >Нанесение в один цвета</option>
+                                        <option value="1+0" >Нанесение в два цвета</option>
+                                        <option value="2+0" >Полноцвет</option>
                                     </select>
                                 </label>
                                 <label>
@@ -187,7 +190,7 @@
                                 <label>
                                     <select size="1"   name="Материал"  id="itemid" >
                                         <option value="Материал"  selected="selected" >Материал</option>
-                                        <option value="пластик" >пластик</option>
+                                        <option value="пластик">пластик</option>
                                         <option value="стекло" >стекло</option>
                                     </select>
                                 </label>
