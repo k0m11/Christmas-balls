@@ -147,7 +147,7 @@
                                     <label>
                                         <select size="1"   name="Размер&nbsp;шаров" id="itemid">
                                             <option value="Выберите размер"  selected="selected" disabled>Выберите размер</option>
-                                            <option value="6&nbsp;см"   >6&nbsp;см</option>
+                                            <option value="6&nbsp;см" >6&nbsp;см</option>
                                             <option value="7&nbsp;см" >7&nbsp;см</option>
                                             <option value="8&nbsp;см" >8&nbsp;см</option>
                                             <option value="10&nbsp;см" >10&nbsp;см</option>
@@ -274,45 +274,29 @@
                                             <p class="new_price" >20 см – 2000</p><br>
                                             <br></div></div>
 
-                                            <div class="multiple-items" style="z-index: -1000;">
-                                                <div style="background:url('images/photo1.jpg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-21.jpg');background-size: cover; 
-                                                background-position: center;"></div>
-                                                <div style="background:zurl('images/photo-gall-3.jpeg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-19.jpg');background-size: cover;
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-5.jpeg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-15.png');background-size: cover;
-                                                background-position: center;"></div><div style="background:url('images/photo-gall-18.jpg');background-size: cover;
-                                                background-position: center;"></div><div style="background:url('images/photo6.jpg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-9.png');background-size: cover;
-                                                background-position: center;"></div>
-
-                                                <div style="background:url('images/photo-gall-13.jpg');background-size: cover;
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-14.png');background-size: cover;
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-8.jpeg');background-size: cover;"></div>
-
-                                                <div style="background:url('images/photo-gall-16.jpg');background-size: cover;
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-17.jpg');background-size: cover;
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-11.jpg');background-size: cover;
-                                                background-position: center;"></div>
-
-                                                <div style="background:url('images/photo-gall-6.jpeg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-20.jpg');background-size: cover; 
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-4.jpeg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-24.jpeg');background-size: cover; 
-                                                background-position: center;"></div>
-                                                <div style="background:url('images/photo-gall-2.jpeg');background-size: cover;"></div>
-                                                <div style="background:url('images/photo-gall-23.jpg');background-size: cover; 
-                                                background-position: center;"></div> </div>
-
-                                                <br><br><br>
-
+                                            <div class="multiple-items">
+                                                <img data-enlargeable src="images/photo1.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-21.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-3.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-19.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-5.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-15.png" alt="">
+                                                <img data-enlargeable src="images/photo-gall-18.jpg" alt="">
+                                                <img data-enlargeable src="images/photo6.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-9.png" alt="">
+                                                <img data-enlargeable src="images/photo-gall-13.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-14.png" alt="">
+                                                <img data-enlargeable src="images/photo-gall-8.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-16.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-17.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-11.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-6.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-20.jpg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-4.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-24.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-2.jpeg" alt="">
+                                                <img data-enlargeable src="images/photo-gall-23.jpg" alt="">
+                                            </div>
                                                 <style>
                                                     @media(min-width: 320px) and (max-width: 800px) { 
                                                         .conteiner_block_7 .price2 {    position: unset !important;
@@ -350,7 +334,14 @@
 
                                                                                 .multiple-items div{
                                                                                     width: 100%;
-
+                                                                                }
+                                                                                .multiple-items img {
+                                                                                    cursor: pointer;
+                                                                                    object-fit: cover;
+                                                                                    transition: ease 300ms;
+                                                                                }
+                                                                                .multiple-items img:hover {
+                                                                                    transform: scale(1.05);
                                                                                 }
 
                                                                                 .slide-arrow{
@@ -1185,10 +1176,38 @@
      <a class="close close2"  href="javascript:void(0)" ></a>
  </div>
 </div> <!-- .pop_up order_cart end-->
+<div id="fullPage"></div>
 
 <script src="/balls/script_r.js" ></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
+    $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
+  var src = $(this).attr('src');
+  var modal;
+  function removeModal() {
+    modal.remove();
+    $('body').off('keyup.modal-close');
+  }
+  modal = $('<div>').css({
+    background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+    backgroundSize: 'contain',
+    width: '100%',
+    height: '100%',
+    position: 'fixed',
+    zIndex: '10000',
+    top: '0',
+    left: '0',
+    cursor: 'zoom-out'
+  }).click(function() {
+    removeModal();
+  }).appendTo('body');
+  //handling ESC
+  $('body').on('keyup.modal-close', function(e) {
+    if (e.key === 'Escape') {
+      removeModal();
+    }
+  });
+});
     $('.multiple-items').slick({
       infinite: true,
       slidesToScroll: 3,
@@ -1205,6 +1224,7 @@
             infinite: true      }
         }   ]
     });  
+    
 </script></body>
 
 </html>
