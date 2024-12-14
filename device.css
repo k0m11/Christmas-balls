@@ -41,7 +41,7 @@
 .header_forma h3 {text-align: center;}
 .header_forma .order_box {margin: 0 auto;}
 .header_forma_bottom {     display: none;}
-form {width: 65%; margin: 0 auto; text-align: center;}
+form {width: 100%; margin: 0 auto; text-align: center;}
 .save {    text-align: center;}
 #conteiner_block1 .item img {width: 100%;}
 #conteiner_block4 .item {    height: 320px;}

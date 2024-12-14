@@ -1,5 +1,3 @@
-
-
 /*END RETAIL*/
 
 $(document).ready(function() {
@@ -35,7 +33,7 @@ $(document).ready(function() {
     });
      $("a.order_product").click(function (){        
         $("#cart").css("display", "block");        
-    });  
+    });
      $(".page_cart a").click(function () {
         $("#cart").css("display", "block"); 
         $(".page_cart").css("display", "none"); 
@@ -69,6 +67,10 @@ $(document).ready(function() {
 		$('#tovar').attr('value',rr);
 	   
      });// END click on batton product
+     $("a.order9").click(function (){  
+        console.log("cock"); 
+        $("#order_cart_shari").show()
+    });
 
     // click on batton recalckULATION CART
     $("a.recalck").click(function (){
