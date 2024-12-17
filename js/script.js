@@ -68,7 +68,6 @@ $(document).ready(function() {
 	   
      });// END click on batton product
      $("a.order9").click(function (){  
-        console.log("cock"); 
         $("#order_cart_shari").show()
     });
 

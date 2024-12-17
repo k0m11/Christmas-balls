@@ -1299,11 +1299,9 @@ input:active, textarea:active{outline: medium none;}
     color: #272727;
     font-size: 35px;
     font-family: PFDinTextCompPro-Medium;  font-weight: normal;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     line-height: 42px;
-    float: left;
-    width: 240px;
-    padding: 47px 0 0 0;
+    padding: 15px 0 0 0;
 }
 .bottom_forma h3 span{}
 .bottom_forma_bottom{

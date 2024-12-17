@@ -21,8 +21,8 @@
 #conteiner_block10 .left {    width: 36%;}
 #conteiner_block10 .left p {font-size: 43px;}
 #conteiner_block10 .right {width: 60%;}
-.bottom_forma h3 {width: 200px;}
-.bottom_forma .order_box {margin: 0 0 0 200px;}
+.bottom_forma h3 {}
+.bottom_forma .order_box {}
 .bottom_forma  .save {padding: 6px 0 0 0px;}
 
 }/***********************************************/
